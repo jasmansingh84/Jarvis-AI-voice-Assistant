@@ -73,4 +73,10 @@ if __name__ == "__main__":
         elif 'open google' in query:
             webbrowser.open("google.com")
 
-  
+
+
+        elif 'play music' in query:
+            music_dir = 'C:\\Users\\jasma\\Music'
+            songs = os.listdir(music_dir)
+            print(songs)    
+            os.startfile(os.path.join(music_dir, songs[0]))
