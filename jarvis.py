@@ -74,6 +74,10 @@ if __name__ == "__main__":
             webbrowser.open("google.com")
 
         
+        elif 'open facebook' in query:
+            webbrowser.open("facebook.com")
+
+        
         elif 'play music' in query:
             music_dir = 'C:\\Users\\jasma\\Music'
             songs = os.listdir(music_dir)
